@@ -136,6 +136,14 @@ li{
     border-radius: 0px 10px 10px 0px;
     margin-left: 0px;
 }
+/* -------------- Pomodoro ----------------------------------- */
+
+#showTime{
+    font-size: 5em;
+    font-family: monospace;
+}
+
+
 /* ----------------------------------------------------------- */
 /* Animation section */
 @keyframes slideUp{
