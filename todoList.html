@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="todoContainer">
     <div id="form">
-        <input type="text" name="" id="writeTask"><button id="addtask">Add</button>
+        <input type="text" name="" id="writeTask" placeholder="Type your hustle here…">
+        <button id="addtask">Add</button>
+        <button id="delTask" style="background-color: crimson; color: white;">Delete</button>
     </div>
+    <p class="subText">
+        A simple space to jot down everything you need to get done — tasks, reminders, or random "don’t forget!" moments. Just type it, hit add, and check things off as you go. It's like your brain... but organized.
+    </p>
+    <br>
     <div id="taskContainer">
-        <li>Task</li>
-        <li>Task</li>
-        <li>Task</li>
+        <ul>
+        </ul>
     </div>
-    <script src="script.js"></script>
+    <script src="todoList.js"></script>
+</div>
 </body>
 </html>

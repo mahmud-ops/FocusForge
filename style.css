@@ -20,14 +20,21 @@ body{
 .text{
     color: white
 }
+.subText{
+    color: grey; 
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 700px;
+    text-align: center;
+}
 .accent-btn{
     background-color: var(--clr-accent);
 }
 .disabled-link {
-  pointer-events: none;  /* disables all mouse interaction */
-  color: gray;
-  opacity: 0.6;
-  cursor: not-allowed;
+    pointer-events: none;  /* disables all mouse interaction */
+    filter: contrast(0.5);
+    color: gray;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* ----------------------------------------------------- */
@@ -75,13 +82,14 @@ button:active{filter: brightness(0.6);}
     top: 100px;
     display: none;
     flex-direction: column;
+    align-self: center;
     align-items: center;
     justify-content: center;
     width: 100%;
     background-color: rgba(112, 112, 112, 0.378);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    height: 200px;
+    min-height: 200px;
     transition: opacity 0.3s;
 }
 .modal-link{
@@ -100,11 +108,23 @@ button:active{filter: brightness(0.6);}
 }
 /* --------------------------------------------------------- */
 /* Todo list page */
+#todoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 #taskContainer{
-    background-color: var(--clr-bg-dark);
+    background-color: rgba(255, 255, 255, 0.222);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 300px;
 }
 li{
     color: white;
+    list-style: none;
 }
 #writeTask{
     padding: 9px;
