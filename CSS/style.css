@@ -140,16 +140,21 @@ li{
 /* -------------- Pomodoro ----------------------------------- */
 #timer_container{
     background-image: url(../Images/pomodoroBG.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    margin: 6%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 #showTime{
-    background-color: rgba(0, 0, 0, 0.531);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.108);
+    padding: 10px 35px;
     border-radius: 7px;
-    font-size: 5em;
+    font-size: 6em;
+    backdrop-filter: blur(5px);
     font-family: monospace;
 }
 
