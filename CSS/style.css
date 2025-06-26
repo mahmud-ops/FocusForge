@@ -24,6 +24,7 @@ body{
     color: grey; 
     font-family: 'Courier New', Courier, monospace;
     max-width: 700px;
+    margin: 10px auto;
     text-align: center;
 }
 .accent-btn{
@@ -137,8 +138,17 @@ li{
     margin-left: 0px;
 }
 /* -------------- Pomodoro ----------------------------------- */
-
+#timer_container{
+    background-image: url(../Images/pomodoroBG.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #showTime{
+    background-color: rgba(0, 0, 0, 0.531);
+    padding: 10px;
+    border-radius: 7px;
     font-size: 5em;
     font-family: monospace;
 }

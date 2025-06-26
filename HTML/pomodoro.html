@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
+<h1 class="text" align = "center">Pomodoro timer</h1>
+<p class="subText">A focused work timer based on the Pomodoro Technique — 25 minutes of deep work followed by a 5-minute break. It helps you beat procrastination, stay consistent, and avoid burnout by working in short, effective sprints. Hit start, zone in, then rest and repeat. It's time management with a rhythm.</p>
 <div id="timer_container">
-    <div id="showTime" class="text">25:00 </div>
+    <br>
+    <div id="options">
+        <button id="lessTime">25/5</button>
+        <button id="moreTime">50/10</button>
+    </div>
+    <p id="showTime" class="text">25:00</p>
     <div id="btn_container">
         <button style="background-color: greenyellow;" id="startBtn">Start</button>
         <button style="background-color: orange;" id="stopBtn">Stop</button>
